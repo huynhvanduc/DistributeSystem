@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	 <PackageReference Include="MassTransit" Version="8.1.2" />
+	 <PackageReference Include="MassTransit.Newtonsoft" Version="8.1.2" />
+	 <PackageReference Include="MassTransit.RabbitMQ" Version="8.1.2" />
+	 <PackageReference Include="Serilog" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DistributeSystem.Infrastructor\DistributeSystem.Infrastructure.csproj" />
+    <ProjectReference Include="..\Query.Persistan\Query.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
